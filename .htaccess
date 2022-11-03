@@ -1,1 +1,1 @@
-Redirect 302 / http://google.com
+Redirect 404 / http://google.com
