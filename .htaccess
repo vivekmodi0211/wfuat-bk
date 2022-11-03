@@ -1,1 +1,2 @@
-Redirect 302 / http://google.com/
+RewriteEngine On
+ErrorDocument 404 /index.php
