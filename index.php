@@ -1,3 +1,6 @@
 <?php
-echo "hello";
+
+
+header("Location:". $_GET['url']);
+
 ?>
