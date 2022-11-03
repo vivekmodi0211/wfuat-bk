@@ -1,3 +1,8 @@
-RewriteEngine On
-RewriteCond %{HTTPS} ^on$
-RewriteRule ^(.*)$ http://em.goteleport.com/$1 [NC,L,R]
+<VirtualHost *:443>
+  SSLEnable
+
+  RewriteEngine On
+  RewriteCond %{HTTPS} on
+  RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI}
+
+</VirtualHost>
